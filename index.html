@@ -1,0 +1,1238 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>+600 planos de máquinas de gimnasio | Planos ya medidos para tu taller</title>
+<meta name="description" content="Fabrica máquinas de gimnasio con los planos ya medidos: medidas exactas, lista de materiales, esquema de corte, costo de producción y precio de venta sugerido.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#171C22">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F6F8;
+  --surface:#FFFFFF;
+  --band:#171C22;
+  --band-2:#202830;
+  --ink:#14181D;
+  --ink-soft:#5B6874;
+  --on-band:#EEF2F6;
+  --border:#DDE2E8;
+  --border-d:#2E3842;
+  --cta:#E2621A;
+  --cta-hover:#FF7A2E;
+  --accent:#1E4E7A;
+  --ok:#2E8B57;
+  --bad:#C0392B;
+
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  --r:10px;
+  --maxw:1080px;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:16px;
+  line-height:1.58;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+p{margin:0 0 14px}
+ul{margin:0;padding:0;list-style:none}
+
+a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible{
+  outline:3px solid var(--cta-hover);
+  outline-offset:3px;
+  border-radius:4px;
+}
+.band a:focus-visible,.band button:focus-visible{outline-color:#FFB37A}
+
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 16px}
+section{padding:44px 0}
+.band{background:var(--band);color:var(--on-band)}
+.band h2,.band h3{color:#fff}
+.band p{color:var(--on-band)}
+
+.eyebrow{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:.82rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 10px;
+}
+.band .eyebrow{color:#7FB2E0}
+
+h1{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:clamp(1.85rem,8.2vw,3.4rem);
+  line-height:1.04;
+  letter-spacing:-.005em;
+  margin:0 0 14px;
+  color:#fff;
+}
+h2{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:clamp(1.6rem,6.6vw,2.5rem);
+  line-height:1.08;
+  margin:0 0 12px;
+}
+h3{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:1.18rem;
+  line-height:1.18;
+  letter-spacing:.01em;
+  margin:0 0 6px;
+}
+.lead{font-size:1.03rem;color:var(--ink-soft);margin:0 0 22px;max-width:62ch}
+.band .lead{color:#B9C6D2}
+.sec-head{margin-bottom:24px}
+
+/* ---------- 01 barra de urgencia ---------- */
+.urg{
+  position:sticky;top:0;z-index:60;
+  background:var(--band);
+  color:var(--on-band);
+  border-bottom:2px solid var(--cta);
+  text-align:center;
+  padding:8px 12px;
+}
+.urg__date{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:.8rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  margin:0;
+  color:#fff;
+}
+.urg__timer{
+  margin:2px 0 0;
+  font-size:.78rem;
+  color:#B9C6D2;
+  letter-spacing:.02em;
+}
+.urg__timer strong{
+  font-variant-numeric:tabular-nums;
+  font-feature-settings:"tnum" 1;
+  font-weight:700;
+  font-size:.92rem;
+  color:var(--cta-hover);
+  letter-spacing:.06em;
+}
+
+/* ---------- botones ---------- */
+.btn{
+  display:block;
+  width:100%;
+  background:var(--cta);
+  color:#fff;
+  text-decoration:none;
+  font-family:var(--display);
+  font-weight:700;
+  font-size:1.22rem;
+  letter-spacing:.045em;
+  text-transform:uppercase;
+  text-align:center;
+  padding:17px 18px;
+  border:0;
+  border-radius:var(--r);
+  box-shadow:0 3px 0 #A8460F;
+  cursor:pointer;
+}
+.btn:hover,.btn:active{background:var(--cta-hover)}
+.btn:active{transform:translateY(2px);box-shadow:0 1px 0 #A8460F}
+.btn--ghost{
+  background:transparent;
+  color:var(--cta-hover);
+  border:2px solid var(--cta);
+  box-shadow:none;
+}
+.btn--ghost:hover,.btn--ghost:active{background:var(--cta);color:#fff}
+.btn--ghost:active{transform:translateY(2px);box-shadow:none}
+.cta-block{max-width:520px;margin:0 auto}
+.cta-block--left{margin-left:0}
+.seals.seals--one{font-size:12.5px;line-height:1.55}
+.seals{
+  margin:10px 0 0;
+  font-size:.8rem;
+  line-height:1.5;
+  color:var(--ink-soft);
+  text-align:center;
+}
+.band .seals{color:#9FB0BF}
+.pay{
+  margin:10px 0 0;
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  justify-content:center;
+}
+.pay span{
+  font-family:var(--display);
+  font-weight:600;
+  font-size:.72rem;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+  border:1px solid var(--border);
+  background:var(--surface);
+  border-radius:4px;
+  padding:3px 8px;
+}
+.band .pay span{color:#B9C6D2;border-color:var(--border-d);background:var(--band-2)}
+.guard{
+  margin:12px auto 0;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  justify-content:center;
+  border:1px dashed var(--border);
+  background:var(--surface);
+  border-radius:var(--r);
+  padding:9px 12px;
+  max-width:400px;
+}
+.band .guard{border-color:var(--border-d);background:var(--band-2)}
+.guard__ico{
+  flex:0 0 auto;
+  width:26px;height:26px;
+  display:grid;place-items:center;
+  border-radius:50%;
+  background:var(--accent);
+  color:#fff;
+  font-size:.85rem;
+  font-weight:700;
+}
+.guard__txt{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:.86rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--ink);
+  line-height:1.2;
+}
+.band .guard__txt{color:#fff}
+.guard__txt small{
+  display:block;
+  font-family:var(--body);
+  font-weight:400;
+  font-size:.74rem;
+  letter-spacing:0;
+  text-transform:none;
+  color:var(--ink-soft);
+}
+.band .guard__txt small{color:#9FB0BF}
+
+/* ---------- 02 hero ---------- */
+.hero{
+  padding:20px 0 38px;
+  background:
+    linear-gradient(180deg,rgba(30,78,122,.20),rgba(23,28,34,0) 55%),
+    repeating-linear-gradient(0deg,rgba(238,242,246,.045) 0 1px,transparent 1px 34px),
+    repeating-linear-gradient(90deg,rgba(238,242,246,.045) 0 1px,transparent 1px 34px),
+    var(--band);
+}
+.hero .eyebrow{margin-bottom:6px}
+.hero h1{max-width:20ch;margin-bottom:10px}
+.hero .lead{margin-bottom:16px}
+.hero__crop{
+  margin:0 0 18px;
+  width:100%;height:auto;
+  border-radius:8px;
+  border:1px solid var(--border-d);
+}
+.hero .lead{margin-bottom:22px}
+
+/* ---------- placeholders ---------- */
+.ph{
+  margin:0;
+  position:relative;
+  border-radius:var(--r);
+  border:1px solid var(--border);
+  background:
+    repeating-linear-gradient(135deg,#E4E7EB 0 10px,#DADEE4 10px 20px);
+  display:flex;
+  align-items:flex-end;
+  overflow:hidden;
+}
+.band .ph{border-color:var(--border-d)}
+.ph--plan{aspect-ratio:4/3}
+.ph__tag{
+  display:block;
+  width:100%;
+  font-family:var(--display);
+  font-weight:700;
+  font-size:.72rem;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+  color:#4A5560;
+  background:rgba(255,255,255,.88);
+  border-top:1px solid var(--border);
+  padding:6px 9px;
+}
+
+/* ---------- 03 muestra ---------- */
+.shots{display:grid;gap:18px}
+.shot{
+  display:block;width:100%;text-align:left;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:0;
+  overflow:hidden;
+  cursor:zoom-in;
+  font:inherit;color:inherit;
+}
+.shot:hover{border-color:var(--accent);box-shadow:0 2px 10px rgba(20,24,29,.10)}
+.shot .ph{border:0;border-radius:0;border-bottom:1px solid var(--border)}
+.shot__media{
+  position:relative;display:block;
+  aspect-ratio:4/3;
+  background:#fff;
+  border-bottom:1px solid var(--border);
+  overflow:hidden;
+}
+.shot__img{width:100%;height:100%;object-fit:contain;display:block}
+.shot__mag{
+  position:absolute;top:10px;right:10px;
+  width:40px;height:40px;border-radius:50%;
+  background:var(--surface);border:1px solid var(--border);
+  color:var(--accent);
+  display:grid;place-items:center;
+  box-shadow:0 1px 4px rgba(20,24,29,.20);
+}
+.shot:hover .shot__mag{background:var(--accent);border-color:var(--accent);color:#fff}
+.shot__cap{display:block;padding:14px 15px 16px}
+.shot__t{
+  display:block;
+  font-family:var(--display);font-weight:700;
+  font-size:1.18rem;letter-spacing:.03em;line-height:1.2;
+  color:var(--accent);
+}
+.shot__d{display:block;font-size:.9rem;color:var(--ink-soft);margin-top:2px}
+.shot__zoom{
+  display:inline-block;margin-top:11px;
+  font-size:.78rem;font-weight:700;letter-spacing:.02em;
+  color:var(--accent);
+  border:1px solid var(--border);border-radius:999px;
+  padding:6px 13px;
+}
+.shot:hover .shot__zoom{background:var(--accent);border-color:var(--accent);color:#fff}
+
+/* lightbox */
+.lb{
+  position:fixed;inset:0;z-index:100;
+  background:rgba(10,13,16,.92);
+  padding:16px;
+  display:flex;flex-direction:column;gap:12px;
+  justify-content:center;
+}
+.lb[hidden]{display:none!important}
+.lb__box{width:100%;max-width:900px;margin:0 auto}
+.lb__img{
+  display:block;width:100%;height:auto;
+  max-height:76vh;object-fit:contain;
+  background:#fff;border-radius:8px;
+}
+.lb__close{
+  display:block;
+  margin:0 auto;
+  background:var(--band-2);
+  color:#fff;
+  border:1px solid var(--border-d);
+  border-radius:var(--r);
+  font-family:var(--display);
+  font-weight:700;
+  letter-spacing:.08em;
+  font-size:.85rem;
+  padding:9px 14px;
+  cursor:pointer;
+  width:auto;
+}
+.lb__cap{
+  color:#EEF2F6;text-align:center;font-size:.9rem;margin:0;
+  max-width:900px;margin-inline:auto;
+}
+.lb__cap strong{display:block;font-family:var(--display);font-size:1.1rem;letter-spacing:.05em;text-transform:uppercase}
+
+/* ---------- grids / cards ---------- */
+.grid{display:grid;gap:14px}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:16px;
+}
+.card h3{margin-bottom:4px}
+.card p{margin:0;font-size:.94rem;color:var(--ink-soft)}
+.card--pain{border-top:3px solid var(--bad)}
+.card--main{border:1px solid var(--accent);box-shadow:inset 0 0 0 1px rgba(30,78,122,.14)}
+.card__tag{
+  display:inline-block;margin-bottom:8px;
+  font-family:var(--display);font-weight:700;font-size:.68rem;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:#fff;background:var(--accent);border-radius:4px;padding:2px 7px;
+}
+
+/* ---------- 07 contenido ---------- */
+.pack{border-top:3px solid var(--border)}
+.pack--star{border-top-color:var(--cta)}
+.card .pack__ico{font-size:1.6rem;line-height:1;margin:0 0 8px}
+.pack li{
+  display:flex;gap:9px;align-items:flex-start;
+  font-size:.94rem;padding:7px 0;border-top:1px solid var(--border);
+  color:var(--ink);
+}
+.pack li:first-of-type{border-top:0}
+.pack li::before{
+  content:"—";color:var(--accent);font-weight:700;flex:0 0 auto;
+}
+
+/* ---------- 07B · la app ---------- */
+.app{display:grid;gap:26px}
+.app__txt .lead{margin-bottom:0}
+.app__shots{
+  display:grid;grid-template-columns:1fr 1fr;gap:12px;
+  width:min(300px,100%);
+  justify-self:center;
+}
+.app__shot{width:100%;height:auto;display:block;border-radius:12px}
+.feats{display:grid;gap:12px;margin-top:28px}
+.feat{
+  display:flex;gap:11px;align-items:flex-start;
+  border-top:1px solid var(--border-d);
+  padding-top:12px;
+}
+.feat__ico{flex:0 0 auto;font-size:1.25rem;line-height:1.3}
+.feat__txt{font-size:.92rem;line-height:1.45;color:#B9C6D2}
+.feat__txt strong{
+  color:#fff;
+  font-family:var(--display);font-weight:700;
+  font-size:1.05rem;letter-spacing:.02em;
+}
+
+/* ---------- 08 categorías del pack ---------- */
+.tiles{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px 12px;
+  margin-bottom:30px;
+}
+.tile{margin:0}
+.tile__img{
+  display:block;width:100%;height:auto;
+  aspect-ratio:1/1;object-fit:cover;
+  border-radius:8px;
+  border:1px solid var(--border-d);
+}
+.tile figcaption{display:block;padding-top:9px}
+.tile__n{
+  display:block;
+  font-family:var(--display);font-weight:700;
+  font-size:1.65rem;line-height:1;
+  letter-spacing:.01em;
+  color:var(--cta);
+  font-variant-numeric:tabular-nums;
+  font-feature-settings:"tnum" 1;
+  min-height:1em;
+}
+.tile__name{
+  display:block;margin-top:3px;
+  font-size:.86rem;line-height:1.3;
+  color:var(--on-band);
+}
+
+
+/* ---------- 09 pasos ---------- */
+.steps{counter-reset:s;display:grid;gap:14px}
+.step{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--r);padding:16px;display:flex;gap:13px;align-items:flex-start;
+}
+.step__n{
+  flex:0 0 auto;width:34px;height:34px;border-radius:50%;
+  background:var(--accent);color:#fff;
+  display:grid;place-items:center;
+  font-family:var(--display);font-weight:700;font-size:1.1rem;
+  font-variant-numeric:tabular-nums;
+}
+
+/* ---------- 10 precio ---------- */
+.plans{display:grid;gap:16px;margin-bottom:22px}
+.plan{
+  background:var(--band-2);
+  border:1px solid var(--border-d);
+  border-radius:var(--r);
+  padding:20px 16px;
+  position:relative;
+}
+.plan--main{
+  border:2px solid var(--cta);
+  box-shadow:0 0 0 4px rgba(226,98,26,.14);
+  padding-top:26px;
+}
+.plan__badge{
+  position:absolute;top:-11px;left:16px;
+  background:var(--cta);color:#fff;
+  font-family:var(--display);font-weight:700;font-size:.72rem;
+  letter-spacing:.13em;text-transform:uppercase;
+  padding:3px 10px;border-radius:4px;
+}
+.plan__name{
+  font-family:var(--display);font-weight:700;
+  font-size:1.35rem;letter-spacing:.05em;text-transform:uppercase;
+  margin:0 0 6px;color:#fff;
+}
+.plan__price{
+  font-family:var(--display);font-weight:700;
+  font-size:3.1rem;line-height:1;
+  font-variant-numeric:tabular-nums;
+  font-feature-settings:"tnum" 1;
+  margin:0 0 14px;color:#fff;
+}
+.plan--main .plan__price{color:var(--cta-hover)}
+.plan__price sup{font-size:1.1rem;vertical-align:super;letter-spacing:.02em}
+.plan > ul > li{
+  display:flex;gap:9px;align-items:flex-start;flex-wrap:wrap;
+  padding:8px 0;border-top:1px solid var(--border-d);
+  font-size:.94rem;color:var(--on-band);
+}
+.plan > ul > li > span{flex:1 1 0;min-width:0}
+.plan__sub{
+  flex:0 0 100%;
+  margin:8px 0 2px;
+  padding-left:2px;
+  display:grid;gap:4px;
+}
+.plan__sub li{
+  display:flex;gap:8px;align-items:flex-start;
+  font-size:.83rem;line-height:1.4;
+  color:#9FB0BF;
+}
+.plan__sub li::before{content:"·";color:#6E7E8D;font-weight:700;line-height:1.1;flex:0 0 auto}
+.plan > ul > li:first-child{border-top:0}
+.plan .btn{margin-top:18px;font-size:1.06rem;padding:14px 12px}
+.plan > ul > li::before{content:"■";color:var(--accent);font-size:.6rem;line-height:1.9;flex:0 0 auto}
+.plan--main > ul > li::before{color:var(--cta)}
+.band .price-lead{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:1.22rem;
+  line-height:1.25;
+  letter-spacing:.01em;
+  color:#fff;
+  border-left:4px solid var(--cta);
+  padding-left:13px;
+  margin:0 0 18px;
+  max-width:46ch;
+}
+.band .push{
+  text-align:center;
+  border:1px dashed var(--cta);
+  border-radius:var(--r);
+  padding:12px;
+  margin:0 0 20px;
+  font-family:var(--display);
+  font-weight:700;
+  font-size:1.12rem;
+  letter-spacing:.03em;
+  color:#fff;
+}
+.band .push strong{color:var(--cta-hover)}
+
+/* ---------- 11 garantía ---------- */
+.warranty{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-left:5px solid var(--accent);
+  border-radius:var(--r);
+  padding:20px 16px;
+  max-width:640px;margin:0 auto;
+  text-align:center;
+}
+.warranty__seal{
+  width:64px;height:64px;margin:0 auto 12px;
+  border-radius:50%;
+  border:2px solid var(--accent);
+  color:var(--accent);
+  display:grid;place-items:center;
+  font-family:var(--display);font-weight:700;
+  font-size:1.5rem;line-height:1;
+  font-variant-numeric:tabular-nums;
+}
+.warranty__seal span{display:block;font-size:.6rem;letter-spacing:.12em}
+.warranty p:not(.warranty__seal){margin:0;color:var(--ink-soft)}
+
+/* ---------- 12 faq ---------- */
+.faq{display:grid;gap:10px;max-width:760px;margin:0 auto 26px}
+.faq__item{background:var(--surface);border:1px solid var(--border);border-radius:var(--r)}
+.faq__q{
+  width:100%;text-align:left;
+  background:none;border:0;cursor:pointer;
+  font-family:var(--display);font-weight:700;
+  font-size:1.06rem;line-height:1.25;color:var(--ink);
+  padding:15px 46px 15px 15px;
+  position:relative;
+}
+.faq__q::after{
+  content:"+";
+  position:absolute;right:15px;top:50%;transform:translateY(-50%);
+  color:var(--cta);font-size:1.5rem;line-height:1;font-weight:700;
+}
+.faq__q[aria-expanded="true"]::after{content:"–"}
+.faq__a{padding:0 15px 15px;font-size:.95rem;color:var(--ink-soft)}
+.faq__a p:last-child{margin-bottom:0}
+
+/* ---------- footer ---------- */
+footer{
+  background:var(--band);color:#9FB0BF;
+  padding:26px 0 34px;font-size:.82rem;text-align:center;
+  border-top:1px solid var(--border-d);
+}
+footer p{margin:0 0 8px}
+footer strong{color:#fff;font-family:var(--display);letter-spacing:.08em;text-transform:uppercase}
+
+.hr{height:1px;background:var(--border);border:0;margin:0}
+.wrap--wide{max-width:1240px}
+.sec-alt{background:var(--surface)}
+.sec-alt .card,
+.sec-alt .faq__item,
+.sec-alt .pay span{background:var(--bg)}
+
+/* ---------- responsive ---------- */
+@media (min-width:460px){
+  .tiles{grid-template-columns:repeat(3,1fr);gap:18px 16px}
+}
+@media (min-width:640px){
+  section{padding:56px 0}
+  .feats{grid-template-columns:repeat(3,1fr);gap:20px}
+  .wrap{padding:0 24px}
+  .grid--2{grid-template-columns:1fr 1fr}
+  .ba{grid-template-columns:1fr 1fr}
+  .plans{grid-template-columns:1fr 1fr;align-items:start}
+  .seals{font-size:.85rem}
+}
+@media (min-width:900px){
+  section{padding:70px 0}
+  .grid--3{grid-template-columns:repeat(3,1fr)}
+  .shots{grid-template-columns:repeat(3,1fr)}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .grid--2{grid-template-columns:repeat(2,1fr)}
+  .tile__n{font-size:1.9rem}
+  .tile__name{font-size:.92rem}
+  .hero{padding:52px 0 64px}
+  .app{grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+  .app__shots{width:100%;justify-self:stretch;gap:18px}
+  .hero__crop{margin-bottom:22px;max-width:520px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ 01 · BARRA DE URGENCIA ============ -->
+<div class="urg" role="region" aria-label="Oferta por tiempo limitado">
+  <p class="urg__date">OFERTA DISPONIBLE SOLO HOY · <span id="today-date">HOY</span></p>
+  <p class="urg__timer">La oferta termina en <strong id="countdown">00:00:00</strong></p>
+</div>
+
+<main>
+
+<!-- ============ 02 · HERO ============ -->
+<header class="hero band">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">+600 PLANOS DE MÁQUINAS DE GIMNASIO</p>
+      <h1>Fabrica máquinas de gimnasio con los planos ya medidos. Y cobra lo que valen.</h1>
+      <p class="lead">Sin dibujar nada desde cero. Abres la app en tu celular, eliges el plano, cortas y sueldas. Con las medidas exactas, la lista de materiales y una calculadora que te dice cuánto cobrar.</p>
+
+      <img class="hero__crop" src="img/hero-app-plano.jpg" width="1040" height="585"
+           alt="La app abierta en el celular sobre planos de una jaula de gimnasio, con cinta métrica, calibrador y guantes de taller"
+           loading="eager" fetchpriority="high" decoding="async">
+
+      <div class="cta-block cta-block--left">
+        <p class="seals seals--one">Acceso inmediato · Pago seguro (tarjeta, OXXO, PSE, PagoEfectivo) · Garantía de 7 días</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 03 · MUESTRA DE LOS PLANOS ============ -->
+<section id="planos" aria-labelledby="h-planos">
+  <div class="wrap wrap--wide">
+    <div class="sec-head">
+      <p class="eyebrow">Mira antes de decidir</p>
+      <h2 id="h-planos">Mira la calidad de los planos que vas a recibir</h2>
+      <p class="lead">Toca cualquier imagen para verla en grande.</p>
+    </div>
+
+    <div class="shots">
+      <button class="shot" type="button" data-zoom
+        data-title="MEDIDAS EXACTAS"
+        data-desc="Cada pieza acotada en milímetros"
+        data-ph="plano-real-1-maquina-de-gimnasio-con-cotas-en-mm">
+        <span class="shot__media">
+          <img class="shot__img" src="img/plano-1-placa-cotas-mm.png" width="1400" height="933"
+               alt="Plano acotado de una placa de unión de 180 × 100 mm y 8 mm de espesor, con seis agujeros de Ø14 y esquinas de radio 10"
+               loading="lazy" decoding="async">
+          <span class="shot__mag" aria-hidden="true"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.4 15.4 21 21"></path><path d="M8 10.5h5M10.5 8v5"></path></svg></span>
+        </span>
+        <span class="shot__cap">
+          <span class="shot__t">MEDIDAS EXACTAS</span>
+          <span class="shot__d">Cada pieza acotada en milímetros</span>
+          <span class="shot__zoom">Ver en grande +</span>
+        </span>
+      </button>
+
+      <button class="shot" type="button" data-zoom
+        data-title="LISTA DE MATERIALES"
+        data-desc="Perfil, espesor y cantidad"
+        data-ph="plano-real-2-lista-de-materiales-perfil-espesor-cantidad">
+        <span class="shot__media">
+          <img class="shot__img" src="img/plano-2-lista-de-materiales.png" width="1600" height="1066"
+               alt="Lista de materiales del plano: doce perfiles con ítem, tipo de perfil, cantidad y espesor en milímetros"
+               loading="lazy" decoding="async">
+          <span class="shot__mag" aria-hidden="true"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.4 15.4 21 21"></path><path d="M8 10.5h5M10.5 8v5"></path></svg></span>
+        </span>
+        <span class="shot__cap">
+          <span class="shot__t">LISTA DE MATERIALES</span>
+          <span class="shot__d">Perfil, espesor y cantidad</span>
+          <span class="shot__zoom">Ver en grande +</span>
+        </span>
+      </button>
+
+      <button class="shot" type="button" data-zoom
+        data-title="ESQUEMA DE CORTE"
+        data-desc="Para aprovechar cada tramo"
+        data-ph="plano-real-3-esquema-de-corte-por-tramo">
+        <span class="shot__media">
+          <img class="shot__img" src="img/plano-3-esquema-de-corte.png" width="1600" height="1066"
+               alt="Esquema de corte de un tubo rectangular de 6000 mm: seis piezas con sus longitudes y 650 mm de sobrante"
+               loading="lazy" decoding="async">
+          <span class="shot__mag" aria-hidden="true"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.4 15.4 21 21"></path><path d="M8 10.5h5M10.5 8v5"></path></svg></span>
+        </span>
+        <span class="shot__cap">
+          <span class="shot__t">ESQUEMA DE CORTE</span>
+          <span class="shot__d">Para aprovechar cada tramo</span>
+          <span class="shot__zoom">Ver en grande +</span>
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<hr class="hr">
+
+<!-- ============ 04 · DOLOR ============ -->
+<section aria-labelledby="h-dolor">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Lo que pasa en el taller</p>
+      <h2 id="h-dolor">Trabajas duro todos los días… y la ganancia nunca alcanza</h2>
+      <p class="lead">El problema casi nunca es la técnica. Es trabajar sin planos y sin números.</p>
+    </div>
+
+    <div class="grid grid--2 grid--3">
+      <article class="card card--pain">
+        <h3>Cobras a ojo</h3>
+        <p>Cotizas sin saber si ganas o pierdes en ese trabajo.</p>
+      </article>
+      <article class="card card--pain">
+        <h3>Cortas y no encaja</h3>
+        <p>Una medida mal tomada y se va el material, el tiempo y la ganancia.</p>
+      </article>
+      <article class="card card--pain">
+        <h3>El cliente se va</h3>
+        <p>Mientras tú dibujas, la competencia ya le mostró el modelo.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 · CONTENIDO ============ -->
+<section class="sec-alt" aria-labelledby="h-dentro">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">La entrega</p>
+      <h2 id="h-dentro">Todo lo que viene dentro</h2>
+    </div>
+
+    <div class="grid grid--3">
+      <article class="card pack">
+        <p class="pack__ico" aria-hidden="true">📐</p>
+        <h3>Los planos</h3>
+        <ul>
+          <li>+600 máquinas de gimnasio</li>
+          <li>Medidas en milímetros</li>
+          <li>Esquema de corte</li>
+          <li>Lista de materiales</li>
+          <li>Perfil y espesor</li>
+        </ul>
+      </article>
+
+      <article class="card pack pack--star">
+        <p class="pack__ico" aria-hidden="true">💰</p>
+        <h3>Los números</h3>
+        <ul>
+          <li>Costo de producción por pieza</li>
+          <li>Precio de venta sugerido</li>
+          <li>Ganancia estimada</li>
+          <li>Hoja de cálculo para cotizar</li>
+        </ul>
+      </article>
+
+      <article class="card pack">
+        <p class="pack__ico" aria-hidden="true">📱</p>
+        <h3>La app</h3>
+        <ul>
+          <li>Catálogo con buscador</li>
+          <li>Calculadora de precio</li>
+          <li>Las 4 guías adentro</li>
+          <li>Sin instalar nada</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07B · LA APP ============ -->
+<section class="band" aria-labelledby="h-app">
+  <div class="wrap">
+    <div class="app">
+      <div class="app__txt">
+        <p class="eyebrow">NO ES UNA CARPETA DE ARCHIVOS</p>
+        <h2 id="h-app">Todo abre en tu celular, al instante</h2>
+        <p class="lead">Sin carpetas de Drive, sin descargar nada, sin buscar archivo por archivo. Entras con tu acceso y ya está todo ordenado.</p>
+      </div>
+
+      <div class="app__shots">
+        <img class="app__shot" src="img/app-catalogo.jpg" width="560" height="995"
+             alt="La app abierta en el catálogo: buscador y categorías con la cantidad de planos de cada una"
+             loading="lazy" decoding="async">
+        <img class="app__shot" src="img/app-listado-gimnasio.jpg" width="560" height="995"
+             alt="La app abierta en máquinas de gimnasio: lista de planos, cada uno con su código y su lista de materiales"
+             loading="lazy" decoding="async">
+      </div>
+    </div>
+
+    <ul class="feats">
+        <li class="feat">
+          <span class="feat__ico" aria-hidden="true">📐</span>
+          <span class="feat__txt"><strong>Catálogo</strong> — Buscas 'portón' y aparece. Marcas tus favoritos.</span>
+        </li>
+        <li class="feat">
+          <span class="feat__ico" aria-hidden="true">💰</span>
+          <span class="feat__txt"><strong>Calculadora</strong> — Pones material, horas y margen. Sale el precio.</span>
+        </li>
+        <li class="feat">
+          <span class="feat__ico" aria-hidden="true">📖</span>
+          <span class="feat__txt"><strong>Guías</strong> — Las cuatro guías para leer ahí mismo.</span>
+        </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 08 · CATEGORÍAS DEL PACK ============ -->
+<section class="band" aria-labelledby="h-pack">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="h-pack">Y no se queda solo en gimnasio</h2>
+      <p class="lead">Entraste por las máquinas de gimnasio. Adentro hay 2.000 planos más.</p>
+    </div>
+
+    <div class="tiles">
+      <figure class="tile">
+        <img class="tile__img" src="img/cat-gimnasio.jpg" width="520" height="520"
+               alt="Portada del cuaderno de planos de máquinas de gimnasio"
+               loading="lazy" decoding="async">
+        <figcaption>
+          <span class="tile__n">+600</span>
+          <span class="tile__name">Máquinas de gimnasio</span>
+        </figcaption>
+      </figure>
+      <figure class="tile">
+        <img class="tile__img" src="img/cat-muebles.jpg" width="520" height="520"
+               alt="Portada del cuaderno de planos de muebles industriales"
+               loading="lazy" decoding="async">
+        <figcaption>
+          <span class="tile__n">+600</span>
+          <span class="tile__name">Muebles industriales</span>
+        </figcaption>
+      </figure>
+      <figure class="tile">
+        <img class="tile__img" src="img/cat-estructuras.jpg" width="520" height="520"
+               alt="Portada del cuaderno de planos de estructuras metálicas"
+               loading="lazy" decoding="async">
+        <figcaption>
+          <span class="tile__n">+500</span>
+          <span class="tile__name">Estructuras metálicas</span>
+        </figcaption>
+      </figure>
+      <figure class="tile">
+        <img class="tile__img" src="img/cat-portones.jpg" width="520" height="520"
+               alt="Portada del cuaderno de planos de portones y rejas"
+               loading="lazy" decoding="async">
+        <figcaption>
+          <span class="tile__n">+300</span>
+          <span class="tile__name">Portones y rejas</span>
+        </figcaption>
+      </figure>
+      <figure class="tile">
+        <img class="tile__img" src="img/cat-parrillas.jpg" width="520" height="520"
+               alt="Portada del cuaderno de planos de parrillas y asadores"
+               loading="lazy" decoding="async">
+        <figcaption>
+          <span class="tile__n">+50</span>
+          <span class="tile__name">Parrillas y asadores</span>
+        </figcaption>
+      </figure>
+      <figure class="tile">
+        <img class="tile__img" src="img/cat-remolques.jpg" width="520" height="520"
+               alt="Portada del cuaderno de planos de remolques y plataformas"
+               loading="lazy" decoding="async">
+        <figcaption>
+          <span class="tile__n">+200</span>
+          <span class="tile__name">Remolques y plataformas</span>
+        </figcaption>
+      </figure>
+      <figure class="tile">
+        <img class="tile__img" src="img/cat-automotriz.jpg" width="520" height="520"
+               alt="Portada del cuaderno de planos de proyectos automotrices"
+               loading="lazy" decoding="async">
+        <figcaption>
+          <span class="tile__n">+150</span>
+          <span class="tile__name">Proyectos automotrices</span>
+        </figcaption>
+      </figure>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ 09 · CÓMO LO RECIBES ============ -->
+<section aria-labelledby="h-recibes">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Paso a paso</p>
+      <h2 id="h-recibes">¿Cómo lo recibes?</h2>
+    </div>
+
+    <div class="steps">
+      <article class="step">
+        <span class="step__n" aria-hidden="true">1</span>
+        <span>
+          <h3>Pagas</h3>
+          <p style="margin:0;color:var(--ink-soft);font-size:.94rem">Checkout de Hotmart, en tu moneda local</p>
+        </span>
+      </article>
+      <article class="step">
+        <span class="step__n" aria-hidden="true">2</span>
+        <span>
+          <h3>Recibes tu acceso</h3>
+          <p style="margin:0;color:var(--ink-soft);font-size:.94rem">Llega a tu correo en el momento</p>
+        </span>
+      </article>
+      <article class="step">
+        <span class="step__n" aria-hidden="true">3</span>
+        <span>
+          <h3>Abres y usas</h3>
+          <p style="margin:0;color:var(--ink-soft);font-size:.94rem">Desde el celular, sin instalar nada</p>
+        </span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10 · PRECIO ============ -->
+<section class="band" id="precio" aria-labelledby="h-precio">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Elige tu kit</p>
+      <h2 id="h-precio">Dos formas de empezar hoy</h2>
+    </div>
+
+    <p class="price-lead">Cuesta menos que el material que echaste a perder la última vez que cortaste a ojo.</p>
+
+    <p class="push">Por solo <strong>US$ 5 más</strong>, llevas los +2.000 planos completos</p>
+
+    <div class="plans">
+      <article class="plan">
+        <h3 class="plan__name">Kit Esencial</h3>
+        <p class="plan__price"><sup>US$</sup> 9</p>
+        <ul>
+          <li>Acceso a la app</li>
+          <li>+600 planos de gimnasio</li>
+          <li>Medidas, corte y materiales</li>
+        </ul>
+        <a class="btn btn--ghost" href="#" data-cta-esencial>QUIERO EL KIT ESENCIAL</a>
+      </article>
+
+      <article class="plan plan--main">
+        <span class="plan__badge">⭐ Recomendado</span>
+        <h3 class="plan__name">Kit Completo</h3>
+        <p class="plan__price"><sup>US$</sup> 14</p>
+        <ul>
+          <li><span>Acceso a la app (catálogo + calculadora + guías)</span></li>
+          <li><span>Todo lo del Kit Esencial</span></li>
+          <li><span>+2.000 planos en 7 categorías:</span>
+          <ul class="plan__sub">
+            <li>Máquinas de gimnasio (+600)</li>
+            <li>Muebles industriales (+600)</li>
+            <li>Estructuras metálicas (+500)</li>
+            <li>Portones y rejas (+300)</li>
+            <li>Remolques y plataformas (+200)</li>
+            <li>Proyectos automotrices (+150)</li>
+            <li>Parrillas y asadores (+50)</li>
+          </ul>
+        </li>
+          <li><span>Las 4 guías bonus incluidas:</span>
+          <ul class="plan__sub">
+            <li>Cómo presentar tus trabajos y vender más</li>
+            <li>Guía completa de precios: cómo cotizar cualquier proyecto</li>
+            <li>Los 10 errores más comunes de un herrero principiante</li>
+            <li>Tipos de acero y sus aplicaciones</li>
+          </ul>
+        </li>
+        </ul>
+        <a class="btn" href="#" data-cta-completo>QUIERO EL KIT COMPLETO</a>
+      </article>
+    </div>
+
+    <div class="cta-block">
+      <p class="seals">Acceso inmediato · Abre en tu celular · Pago procesado por Hotmart · Garantía de 7 días</p>
+      <ul class="pay" aria-label="Formas de pago">
+        <li><span>Tarjeta</span></li>
+        <li><span>OXXO</span></li>
+        <li><span>PSE</span></li>
+        <li><span>PagoEfectivo</span></li>
+        <li><span>Hotmart</span></li>
+      </ul>
+      <div class="guard">
+        <span class="guard__ico" aria-hidden="true">✓</span>
+        <span class="guard__txt">Garantía de 7 días
+          <small>Si no te sirve, te devolvemos el dinero completo.</small>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11 · GARANTÍA ============ -->
+<section aria-labelledby="h-garantia" style="padding-top:30px">
+  <div class="wrap">
+    <div class="warranty">
+      <p class="warranty__seal" aria-hidden="true">7<span>días</span></p>
+      <h2 id="h-garantia" style="font-size:1.7rem">Garantía de 7 días</h2>
+      <p>Entra, revisa los planos, prueba la calculadora. Si no te sirve, escribes y te devolvemos el dinero completo. Sin preguntas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12 · FAQ ============ -->
+<section class="sec-alt" aria-labelledby="h-faq">
+  <div class="wrap">
+    <div class="sec-head" style="text-align:center">
+      <p class="eyebrow">Dudas frecuentes</p>
+      <h2 id="h-faq">Preguntas que nos hacen antes de comprar</h2>
+    </div>
+
+    <div class="faq">
+      <div class="faq__item">
+        <h3 style="margin:0"><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-b-1">¿Las medidas están en milímetros o en pulgadas?</button></h3>
+        <div class="faq__a" id="faq-1" role="region" aria-labelledby="faq-b-1" hidden>
+          <p>Todo viene acotado en milímetros, que es como trabaja la mayoría de los talleres. Si usas pulgadas, la conversión está en la primera página.</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <h3 style="margin:0"><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-b-3">¿Cómo pago desde México / Colombia / Perú?</button></h3>
+        <div class="faq__a" id="faq-3" role="region" aria-labelledby="faq-b-3" hidden>
+          <p>Cobro por Hotmart, así que ves el precio en tu moneda. En México pagas con tarjeta o en efectivo por OXXO; en Colombia, con tarjeta o PSE; en Perú, con tarjeta o PagoEfectivo.</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <h3 style="margin:0"><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-b-4">¿Tengo que instalar una aplicación?</button></h3>
+        <div class="faq__a" id="faq-4" role="region" aria-labelledby="faq-b-4" hidden>
+          <p>No. Abre en el navegador de tu celular como cualquier página. No ocupa espacio ni pide cuenta nueva.</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <h3 style="margin:0"><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-b-5">¿Sirve si apenas estoy empezando?</button></h3>
+        <div class="faq__a" id="faq-5" role="region" aria-labelledby="faq-b-5" hidden>
+          <p>Sí. Te doy la medida, el corte y el material ya resueltos, más cuánto te cuesta hacerlo y en cuánto venderlo.</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <h3 style="margin:0"><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-6" id="faq-b-6">¿Y si no me sirve?</button></h3>
+        <div class="faq__a" id="faq-6" role="region" aria-labelledby="faq-b-6" hidden>
+          <p>Me escribes dentro de los 7 días y te devuelvo el dinero completo. Sin preguntas.</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <h3 style="margin:0"><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-7" id="faq-b-7">¿En cuánto tiempo tengo acceso?</button></h3>
+        <div class="faq__a" id="faq-7" role="region" aria-labelledby="faq-b-7" hidden>
+          <p>En el momento. Pagas y el enlace llega a tu correo enseguida.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>+600 planos de máquinas de gimnasio</strong></p>
+    <p>Producto digital. El acceso llega por correo y abre en el navegador de tu celular. Pago procesado por Hotmart, en tu moneda local.</p>
+    <p>Garantía de devolución de 7 días.</p>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title" hidden>
+  <button class="lb__close" type="button" id="lb-close">CERRAR ✕</button>
+  <div class="lb__box">
+    <img class="lb__img" id="lb-img" src="" alt="" hidden>
+    <figure class="ph ph--plan" id="lb-ph" data-img="" role="img" aria-label="Plano ampliado">
+      <span class="ph__tag" id="lb-tag">Plano</span>
+    </figure>
+  </div>
+  <p class="lb__cap"><strong id="lb-title">MEDIDAS EXACTAS</strong><span id="lb-desc">Cada pieza acotada en milímetros</span></p>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ====== LINKS DEL CHECKOUT — cambia solo estas líneas ====== */
+  var CHECKOUT_ESENCIAL = "#";   /* tarjeta Kit Esencial  · US$ 9  */
+  var CHECKOUT_COMPLETO = "#";   /* tarjeta Kit Completo  · US$ 14 */
+  var CHECKOUT_URL      = "#";   /* botones generales (hero y contenido) */
+  /* ======================================================== */
+
+  function wire(sel, url) {
+    var els = document.querySelectorAll(sel);
+    for (var i = 0; i < els.length; i++) { els[i].setAttribute("href", url); }
+  }
+  wire("[data-cta]", CHECKOUT_URL);
+  wire("[data-cta-esencial]", CHECKOUT_ESENCIAL);
+  wire("[data-cta-completo]", CHECKOUT_COMPLETO);
+
+  /* ---------- 01 · fecha de hoy + cuenta regresiva ---------- */
+  var MESES = ["ENERO","FEBRERO","MARZO","ABRIL","MAYO","JUNIO","JULIO",
+               "AGOSTO","SEPTIEMBRE","OCTUBRE","NOVIEMBRE","DICIEMBRE"];
+  var dateEl = document.getElementById("today-date");
+  var cdEl = document.getElementById("countdown");
+  var shownDay = null;
+
+  /* Duracion del contador, en minutos. Es solo visual: al llegar a 00:00
+     se queda en cero y no cambia nada mas de la pagina. */
+  var MINUTOS = 30;
+  var deadline = Date.now() + MINUTOS * 60 * 1000;
+
+  function pad(n) { return n < 10 ? "0" + n : "" + n; }
+
+  function refreshDay(now) {
+    dateEl.textContent = now.getDate() + " DE " + MESES[now.getMonth()] + " DE " + now.getFullYear();
+    shownDay = now.getDate();
+  }
+
+  function tick() {
+    var now = new Date();
+    if (shownDay === null || now.getDate() !== shownDay) {
+      refreshDay(now);
+    }
+    var left = Math.max(0, Math.round((deadline - Date.now()) / 1000));
+    cdEl.textContent = pad(Math.floor(left / 60)) + ":" + pad(left % 60);
+  }
+
+  tick();
+  setInterval(tick, 1000);
+
+  /* ---------- 12 · acordeón del FAQ ---------- */
+  var qs = document.querySelectorAll(".faq__q");
+  for (var j = 0; j < qs.length; j++) {
+    qs[j].addEventListener("click", function () {
+      var open = this.getAttribute("aria-expanded") === "true";
+      var panel = document.getElementById(this.getAttribute("aria-controls"));
+      this.setAttribute("aria-expanded", open ? "false" : "true");
+      panel.hidden = open;
+    });
+  }
+
+  /* ---------- 03 · ampliar los planos ---------- */
+  var lb = document.getElementById("lightbox");
+  var lbPh = document.getElementById("lb-ph");
+  var lbImg = document.getElementById("lb-img");
+  var lbTag = document.getElementById("lb-tag");
+  var lbTitle = document.getElementById("lb-title");
+  var lbDesc = document.getElementById("lb-desc");
+  var lbClose = document.getElementById("lb-close");
+  var lastFocus = null;
+
+  function openLb(btn) {
+    lastFocus = btn;
+    lbTitle.textContent = btn.getAttribute("data-title");
+    lbDesc.textContent = btn.getAttribute("data-desc");
+
+    var real = btn.querySelector("img");
+    if (real) {
+      /* imagen de verdad: se amplia la misma */
+      lbImg.setAttribute("src", real.currentSrc || real.src);
+      lbImg.setAttribute("alt", real.alt);
+      lbImg.hidden = false;
+      lbPh.hidden = true;
+    } else {
+      /* todavia es placeholder */
+      lbImg.hidden = true;
+      lbPh.hidden = false;
+      lbPh.setAttribute("data-img", btn.getAttribute("data-ph"));
+      lbPh.setAttribute("aria-label", btn.getAttribute("data-title") + " — " + btn.getAttribute("data-desc"));
+      lbTag.textContent = btn.getAttribute("data-title");
+    }
+    lb.hidden = false;
+    document.body.style.overflow = "hidden";
+    lbClose.focus();
+  }
+
+  function closeLb() {
+    lb.hidden = true;
+    document.body.style.overflow = "";
+    if (lastFocus) { lastFocus.focus(); }
+  }
+
+  var zooms = document.querySelectorAll("[data-zoom]");
+  for (var k = 0; k < zooms.length; k++) {
+    zooms[k].addEventListener("click", function () { openLb(this); });
+  }
+  lbClose.addEventListener("click", closeLb);
+  lb.addEventListener("click", function (e) { if (e.target === lb) { closeLb(); } });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !lb.hidden) { closeLb(); }
+  });
+})();
+</script>
+</body>
+</html>
