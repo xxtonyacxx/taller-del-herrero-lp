@@ -617,6 +617,138 @@ h3{
 }
 
 
+/* ---------- popup de upsell ---------- */
+.upsell{
+  position:fixed;inset:0;z-index:120;
+  background:rgba(10,13,16,.75);
+  display:flex;align-items:center;justify-content:center;
+  padding:18px;
+}
+.upsell[hidden]{display:none!important}
+.upsell__box{
+  position:relative;
+  width:100%;max-width:440px;
+  max-height:calc(100vh - 36px);
+  background:var(--band-2);
+  border:2px solid #FF6B35;
+  border-radius:14px;
+  box-shadow:0 18px 50px rgba(0,0,0,.55);
+  padding:24px 20px 20px;
+  text-align:center;
+}
+.upsell__x{
+  position:absolute;top:8px;right:8px;
+  width:34px;height:34px;
+  background:none;border:0;border-radius:50%;
+  color:#9FB0BF;font-size:1.05rem;line-height:1;
+  cursor:pointer;
+}
+.upsell__x:hover{background:var(--band);color:#fff}
+.upsell__title{
+  font-family:var(--display);font-weight:700;
+  font-size:1.5rem;line-height:1.12;
+  margin:0 0 10px;color:#fff;
+}
+.upsell__text{
+  margin:0 0 14px;
+  font-size:.92rem;line-height:1.5;
+  color:#B9C6D2;
+}
+.upsell__cmp{
+  list-style:none;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;text-align:left;
+}
+.upsell__row{
+  border:1px solid var(--border-d);
+  border-radius:8px;
+  padding:9px 11px;
+  font-size:.82rem;line-height:1.35;
+  color:#B9C6D2;
+}
+.upsell__row--win{
+  border-color:#FF6B35;
+  background:rgba(255,107,53,.08);
+  color:var(--on-band);
+}
+.upsell__k{
+  display:block;
+  font-family:var(--display);font-weight:700;
+  font-size:.86rem;letter-spacing:.07em;text-transform:uppercase;
+  color:#fff;
+}
+.upsell__row b{color:#FF6B35;font-variant-numeric:tabular-nums}
+.upsell__yes{
+  display:block;
+  background:#FF6B35;color:#fff;
+  text-decoration:none;
+  font-family:var(--display);font-weight:700;
+  font-size:1.12rem;letter-spacing:.03em;
+  padding:16px 14px;
+  border-radius:10px;
+  box-shadow:0 3px 0 #C24A1C;
+  margin-bottom:11px;
+}
+.upsell__yes:hover{background:#FF8253}
+.upsell__yes:active{transform:translateY(2px);box-shadow:0 1px 0 #C24A1C}
+.upsell__no{
+  display:block;
+  background:none;color:var(--on-band);
+  text-decoration:none;
+  border:1px solid #5B6874;
+  border-radius:10px;
+  font-size:.9rem;font-weight:600;line-height:1.3;
+  padding:12px 12px;
+}
+.upsell__no:hover{border-color:var(--on-band);background:rgba(238,242,246,.06)}
+.upsell a:focus-visible,.upsell button:focus-visible{outline:3px solid #FFB37A;outline-offset:3px}
+
+/* pantallas muy bajas (celular acostado): dos columnas y todo mas apretado */
+@media (max-height:500px) and (min-width:520px){
+  .upsell__box{max-width:640px;padding:16px 18px;text-align:left;
+    display:grid;grid-template-columns:1fr 1fr;gap:0 20px;align-items:start}
+  .upsell__title{grid-column:1;margin:0 0 8px;font-size:1.24rem}
+  .upsell__text{grid-column:1;grid-row:2;margin:0;font-size:.84rem}
+  .upsell__cmp{grid-column:2;grid-row:1 / span 2;margin:0 0 10px;align-self:start}
+  .upsell__yes{grid-column:2;margin:0 0 8px;font-size:1rem;padding:12px}
+  .upsell__no{grid-column:2;font-size:.83rem;padding:9px;text-align:center}
+}
+@media (max-height:500px) and (max-width:519px){
+  .upsell{padding:10px}
+  .upsell__box{padding:14px 13px 13px;max-height:calc(100vh - 20px)}
+  .upsell__title{font-size:1.08rem;margin-bottom:6px}
+  .upsell__text{font-size:.78rem;line-height:1.4;margin-bottom:9px}
+  .upsell__cmp{gap:5px;margin-bottom:10px}
+  .upsell__row{padding:6px 9px;font-size:.74rem;line-height:1.3}
+  .upsell__k{font-size:.78rem}
+  .upsell__yes{font-size:.94rem;padding:11px 10px;margin-bottom:7px}
+  .upsell__no{font-size:.79rem;padding:8px}
+  .upsell__x{width:28px;height:28px;top:5px;right:5px}
+}
+
+/* pantalla muy baja: cada fila de la comparacion en una sola linea */
+@media (max-height:400px){
+  .upsell{padding:10px}
+  .upsell__box{max-height:calc(100vh - 20px)}
+  .upsell__k{display:inline}
+  .upsell__k::after{content:":\00a0"}
+  .upsell__row{padding:6px 9px}
+  .upsell__cmp{gap:5px}
+  .upsell__text{font-size:.8rem;line-height:1.4}
+  .upsell__yes{padding:11px;font-size:.98rem}
+  .upsell__no{padding:8px;font-size:.8rem}
+}
+
+/* pantallas bajas: aprieta para que nunca haga falta scroll */
+@media (max-height:620px) and (min-height:501px){
+  .upsell__box{padding:18px 16px 16px}
+  .upsell__title{font-size:1.28rem;margin-bottom:8px}
+  .upsell__text{font-size:.86rem;margin-bottom:11px}
+  .upsell__cmp{gap:6px;margin-bottom:12px}
+  .upsell__row{padding:7px 10px;font-size:.79rem}
+  .upsell__yes{font-size:1.02rem;padding:13px 12px;margin-bottom:9px}
+  .upsell__no{font-size:.85rem;padding:10px}
+}
+
 /* ---------- 10 precio ---------- */
 .plans{display:grid;gap:16px;margin-bottom:22px}
 .plan{
@@ -1369,6 +1501,31 @@ footer strong{color:#fff;font-family:var(--display);letter-spacing:.08em;text-tr
   </div>
 </footer>
 
+<!-- ============ POPUP DE UPSELL ============ -->
+<div class="upsell" id="upsell" role="dialog" aria-modal="true" aria-labelledby="up-title" hidden>
+  <div class="upsell__box">
+    <button class="upsell__x" type="button" id="up-close" aria-label="Cerrar y volver a la página">✕</button>
+
+    <h2 class="upsell__title" id="up-title">¡Espera! Antes de continuar...</h2>
+
+    <p class="upsell__text">Por solo $3 más, llévate el Kit Completo: incluye la calculadora de precios y las guías de proveedores que no vienen en el Kit Esencial.</p>
+
+    <ul class="upsell__cmp">
+      <li class="upsell__row">
+        <span class="upsell__k">Kit Esencial</span>
+        +2.000 planos — <b>$9</b>
+      </li>
+      <li class="upsell__row upsell__row--win">
+        <span class="upsell__k">Kit Completo</span>
+        +2.000 planos + calculadora + guías — <b>$12</b>
+      </li>
+    </ul>
+
+    <a class="upsell__yes" id="up-yes" href="#" target="_blank" rel="noopener noreferrer">Sí, quiero el Kit Completo por $12</a>
+    <a class="upsell__no" id="up-no" href="#" target="_blank" rel="noopener noreferrer">No, gracias — seguir con el Kit Esencial por $9</a>
+  </div>
+</div>
+
 <!-- ============ LIGHTBOX ============ -->
 <div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title" hidden>
   <button class="lb__close" type="button" id="lb-close">CERRAR ✕</button>
@@ -1388,6 +1545,7 @@ footer strong{color:#fff;font-family:var(--display);letter-spacing:.08em;text-tr
   /* ====== LINKS DEL CHECKOUT — cambia solo estas líneas ====== */
   var CHECKOUT_ESENCIAL = "https://pay.hotmart.com/P107401702E?off=g093ovwg&checkoutMode=10";   /* tarjeta Kit Esencial  · US$ 9  */
   var CHECKOUT_COMPLETO = "https://pay.hotmart.com/P107401702E?off=tox9wrdv&checkoutMode=10";   /* tarjeta Kit Completo  · US$ 14 */
+  var UPSELL_COMPLETO   = "https://pay.hotmart.com/P107401702E?off=douivfbc&checkoutMode=10";   /* popup de upsell       · US$ 12 */
   var CHECKOUT_URL      = "#";   /* botones generales (hero y contenido) */
   /* ======================================================== */
 
@@ -1398,6 +1556,47 @@ footer strong{color:#fff;font-family:var(--display);letter-spacing:.08em;text-tr
   wire("[data-cta]", CHECKOUT_URL);
   wire("[data-cta-esencial]", CHECKOUT_ESENCIAL);
   wire("[data-cta-completo]", CHECKOUT_COMPLETO);
+
+  /* ---------- popup de upsell del Kit Esencial ---------- */
+  var upsell = document.getElementById("upsell");
+  var upYes = document.getElementById("up-yes");
+  var upNo = document.getElementById("up-no");
+  var upClose = document.getElementById("up-close");
+  var upOrigen = null;
+
+  upYes.setAttribute("href", UPSELL_COMPLETO);
+  upNo.setAttribute("href", CHECKOUT_ESENCIAL);
+
+  function abrirUpsell(btn) {
+    upOrigen = btn;
+    upsell.hidden = false;
+    document.body.style.overflow = "hidden";
+    upYes.focus();
+  }
+
+  function cerrarUpsell() {
+    upsell.hidden = true;
+    document.body.style.overflow = "";
+    if (upOrigen) { upOrigen.focus(); }
+  }
+
+  var btnEsencial = document.querySelector("[data-cta-esencial]");
+  if (btnEsencial) {
+    btnEsencial.addEventListener("click", function (e) {
+      e.preventDefault();
+      abrirUpsell(this);
+    });
+  }
+
+  upClose.addEventListener("click", cerrarUpsell);
+  upsell.addEventListener("click", function (e) { if (e.target === upsell) { cerrarUpsell(); } });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !upsell.hidden) { cerrarUpsell(); }
+  });
+  /* al elegir cualquiera de las dos opciones el checkout abre en otra pestaña
+     y el popup se cierra: la página queda como estaba */
+  upYes.addEventListener("click", cerrarUpsell);
+  upNo.addEventListener("click", cerrarUpsell);
 
   /* ---------- 01 · fecha de hoy + cuenta regresiva ---------- */
   var MESES = ["ENERO","FEBRERO","MARZO","ABRIL","MAYO","JUNIO","JULIO",
