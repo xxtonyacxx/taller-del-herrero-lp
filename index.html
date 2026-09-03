@@ -212,6 +212,51 @@ h3{
   padding:3px 8px;
 }
 .band .pay span{color:#B9C6D2;border-color:var(--border-d);background:var(--band-2)}
+.curr{
+  margin:12px auto 0;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  justify-content:center;
+  border:1px solid var(--border);
+  background:var(--surface);
+  border-radius:var(--r);
+  padding:9px 12px;
+  max-width:400px;
+}
+.band .curr{border-color:var(--border-d);background:var(--band-2)}
+.curr__ico{
+  flex:0 0 auto;
+  width:26px;height:26px;
+  display:grid;place-items:center;
+  border-radius:50%;
+  background:var(--accent);
+  color:#fff;
+  font-family:var(--display);
+  font-size:.95rem;
+  font-weight:700;
+}
+.curr__txt{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:.86rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--ink);
+  line-height:1.2;
+}
+.band .curr__txt{color:#fff}
+.curr__txt small{
+  display:block;
+  font-family:var(--body);
+  font-weight:400;
+  font-size:.74rem;
+  letter-spacing:0;
+  text-transform:none;
+  color:var(--ink-soft);
+}
+.band .curr__txt small{color:#9FB0BF}
+
 .guard{
   margin:12px auto 0;
   display:flex;
@@ -946,7 +991,7 @@ footer strong{color:#fff;font-family:var(--display);letter-spacing:.08em;text-tr
            loading="eager" fetchpriority="high" decoding="async">
 
       <div class="cta-block cta-block--left">
-        <p class="seals seals--one">Acceso inmediato · Pago seguro (tarjeta, OXXO, PSE, PagoEfectivo) · Garantía de 7 días</p>
+        <p class="seals seals--one">Acceso inmediato · Pago seguro · Garantía de 7 días</p>
       </div>
     </div>
   </div>
@@ -1408,13 +1453,12 @@ footer strong{color:#fff;font-family:var(--display);letter-spacing:.08em;text-tr
 
     <div class="cta-block">
       <p class="seals">Acceso inmediato · Abre en tu celular · Pago procesado por Hotmart · Garantía de 7 días</p>
-      <ul class="pay" aria-label="Formas de pago">
-        <li><span>Tarjeta</span></li>
-        <li><span>OXXO</span></li>
-        <li><span>PSE</span></li>
-        <li><span>PagoEfectivo</span></li>
-        <li><span>Hotmart</span></li>
-      </ul>
+      <div class="curr">
+        <span class="curr__ico" aria-hidden="true">$</span>
+        <span class="curr__txt">Pagas en la moneda de tu país
+          <small>El checkout de Hotmart convierte el precio automáticamente, sin importar desde dónde compres.</small>
+        </span>
+      </div>
       <div class="guard">
         <span class="guard__ico" aria-hidden="true">✓</span>
         <span class="guard__txt">Garantía de 7 días
@@ -1453,9 +1497,9 @@ footer strong{color:#fff;font-family:var(--display);letter-spacing:.08em;text-tr
       </div>
 
       <div class="faq__item">
-        <h3 style="margin:0"><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-b-3">¿Cómo pago desde México / Colombia / Perú?</button></h3>
+        <h3 style="margin:0"><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-b-3">¿Cómo pago desde mi país?</button></h3>
         <div class="faq__a" id="faq-3" role="region" aria-labelledby="faq-b-3" hidden>
-          <p>Cobro por Hotmart, así que ves el precio en tu moneda. En México pagas con tarjeta o en efectivo por OXXO; en Colombia, con tarjeta o PSE; en Perú, con tarjeta o PagoEfectivo.</p>
+          <p>Cobro por Hotmart, que te muestra el precio ya convertido a la moneda de tu país. Ahí eliges el medio de pago que tengas disponible.</p>
         </div>
       </div>
 
