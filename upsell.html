@@ -161,6 +161,10 @@
       margin-bottom: 11px;
     }
 
+    /* o widget da Hotmart desenha o próprio botão aqui dentro;
+       a div só guarda o mesmo espaço que o botão ocupava */
+    #hotmart-sales-funnel { margin-bottom: 11px }
+
     .si:hover { background: var(--orange-hi) }
     .si:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--orange-dk) }
 
@@ -192,6 +196,7 @@
       .precio__v { font-size: 2.2rem }
       .precio { margin-bottom: 12px }
       .si { font-size: 1.08rem; padding: 13px 14px; margin-bottom: 9px }
+      #hotmart-sales-funnel { margin-bottom: 9px }
       .no { font-size: .82rem; padding: 10px 12px }
     }
 
@@ -219,6 +224,7 @@
       .precio__v { font-size: 1.62rem }
       .precio__d { font-size: .68rem; margin-top: 3px }
       .si { font-size: .94rem; padding: 10px 12px; margin-bottom: 7px }
+      #hotmart-sales-funnel { margin-bottom: 7px }
       .no { font-size: .74rem; padding: 8px }
     }
 
@@ -242,6 +248,7 @@
       .oferta { grid-column: 2; grid-row: 1 / span 3; margin: 0 }
       .precio { grid-column: 1; margin: 16px 0 12px }
       .si { grid-column: 1 }
+      #hotmart-sales-funnel { grid-column: 1 }
       .no { grid-column: 1 }
     }
 
@@ -259,6 +266,7 @@
       .precio__v { font-size: 1.44rem }
       .precio__d { font-size: .64rem }
       .si { font-size: .9rem; padding: 9px 10px; margin-bottom: 6px }
+      #hotmart-sales-funnel { margin-bottom: 6px }
       .no { font-size: .72rem; padding: 7px }
     }
 
@@ -289,20 +297,13 @@
       <span class="precio__d">Pago único · Acceso inmediato</span>
     </p>
 
-    <a class="si" id="cta-pro" href="#" target="_blank" rel="noopener noreferrer">Sí, quiero Taller PRO</a>
+    <div id="hotmart-sales-funnel"></div>
     <a class="no" href="gracias.html">No, gracias — continuar al catálogo</a>
   </main>
 
+  <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
   <script>
-    (function () {
-      "use strict";
-
-      /* ====== LINK DEL CHECKOUT DE TALLER PRO — cambia solo esta línea ====== */
-      var CHECKOUT_TALLER_PRO = "PLACEHOLDER_CHECKOUT_TALLER_PRO";
-      /* ===================================================================== */
-
-      document.getElementById("cta-pro").setAttribute("href", CHECKOUT_TALLER_PRO);
-    })();
+    checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
   </script>
 </body>
 
